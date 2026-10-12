@@ -339,6 +339,74 @@ h2,h3{font-weight:600}
 body.light .shapes{opacity:.2}
 @media (prefers-reduced-motion:reduce){.shapes i{animation:none}}
 @media (max-width:640px){.shapes i:nth-child(n+4){display:none}}
+
+/* ===== Light mode contrast fixes ===== */
+body.light{--acc:#7c3aed;--acc2:#0891b2;--mut:#5b5b7a}
+body.light .tag{background:rgba(124,58,237,.12);color:#6d28d9;border-color:rgba(124,58,237,.35)}
+body.light .ai-badge.high{color:#059669;background:rgba(52,211,153,.12);border-color:rgba(5,150,105,.35)}
+body.light .ai-badge.mid{color:#b45309;background:rgba(251,191,36,.15);border-color:rgba(180,83,9,.35)}
+body.light .ai-badge.low{color:#64748b;background:rgba(100,116,139,.1);border-color:rgba(100,116,139,.3)}
+body.light .idx{color:#94a3b8}
+body.light .ex{background:rgba(8,145,178,.08);border-color:rgba(8,145,178,.3);color:#0e7490}
+body.light .ex:hover{background:rgba(8,145,178,.18);color:#155e75;box-shadow:0 0 12px rgba(8,145,178,.2)}
+body.light .ai-hint{color:#0e7490;background:rgba(8,145,178,.08);border-color:rgba(8,145,178,.25)}
+body.light .info{color:#0e7490;background:rgba(8,145,178,.08);border-color:rgba(8,145,178,.25)}
+body.light .warn{color:#b45309;background:rgba(251,191,36,.12);border-color:rgba(180,83,9,.3)}
+body.light .neg-out{color:#be123c;background:rgba(244,63,94,.06);border-color:rgba(190,18,60,.3)}
+body.light .slider-val{color:#0e7490;background:rgba(8,145,178,.1)}
+body.light .kb-key{background:rgba(124,58,237,.12);color:#6d28d9}
+body.light .dna-trait{background:rgba(219,39,119,.1);color:#be185d;border-color:rgba(190,24,93,.3)}
+body.light .sug-item.warn{color:#b45309}
+body.light .sug-item.info{color:#0e7490}
+body.light .sug-item.good{color:#059669}
+body.light .sug-item.bad{color:#be123c}
+body.light .card:hover{box-shadow:0 14px 34px rgba(0,0,0,.12)}
+body.light .out{background:#f8f8fc;border-color:rgba(124,58,237,.35);color:var(--txt)}
+body.light .ai-bar{background:linear-gradient(135deg,rgba(124,58,237,.06),rgba(8,145,178,.05));border-color:rgba(124,58,237,.2)}
+body.light .var-title{color:#0e7490}
+body.light .stat-num{background:linear-gradient(135deg,#7c3aed,#0891b2);-webkit-background-clip:text;background-clip:text}
+body.light .an-num{background:linear-gradient(135deg,#7c3aed,#0891b2);-webkit-background-clip:text;background-clip:text}
+body.light .gauge-num{background:linear-gradient(135deg,#7c3aed,#0891b2);-webkit-background-clip:text;background-clip:text}
+body.light .model-score{background:linear-gradient(135deg,#7c3aed,#0891b2);-webkit-background-clip:text;background-clip:text}
+body.light .evo-score{background:linear-gradient(135deg,#059669,#0891b2);-webkit-background-clip:text;background-clip:text}
+body.light .dna-hero h2{background:linear-gradient(135deg,#db2777,#7c3aed,#0891b2);-webkit-background-clip:text;background-clip:text}
+body.light .modal h2{background:linear-gradient(135deg,#7c3aed,#0891b2);-webkit-background-clip:text;background-clip:text}
+body.light .logo{filter:drop-shadow(0 0 12px rgba(124,58,237,.25))}
+body.light .card p{opacity:1}
+body.light select.small option,body.light select.full option{background:#fff;color:#1a1a2e}
+body.light .hist-item{color:#5b5b7a}
+body.light .hist-item:hover{color:var(--txt)}
+body.light .sim-item{color:#5b5b7a}
+body.light .sim-item:hover{color:var(--txt)}
+body.light .dna-preview{color:#5b5b7a}
+body.light .evo-body{color:#5b5b7a}
+body.light .matrix-body{color:var(--txt);opacity:1}
+body.light .live-preview{color:#5b5b7a}
+body.light .field label{opacity:1}
+body.light .hint{color:#5b5b7a}
+body.light .sub{color:#5b5b7a}
+body.light .meta{color:#5b5b7a}
+body.light .empty{color:#5b5b7a}
+body.light .ai-bar .label{color:#5b5b7a}
+body.light .check-item.no{color:#94a3b8}
+body.light .sim-score{background:rgba(124,58,237,.15);color:#6d28d9}
+body.light .panel::before{background:linear-gradient(135deg,rgba(124,58,237,.45),transparent 35%,transparent 65%,rgba(8,145,178,.4))}
+
+/* Easy Idea Maker styles */
+.easy-hero{background:linear-gradient(135deg,rgba(52,211,153,.12),rgba(34,211,238,.1),rgba(168,85,247,.08));border:1px solid rgba(52,211,153,.3);border-radius:16px;padding:18px;margin-bottom:18px;text-align:center}
+.easy-hero h2{font-size:20px;font-weight:700;background:linear-gradient(135deg,#34d399,#22d3ee,#a855f7);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:6px}
+.easy-hero p{color:var(--mut);font-size:12.5px;line-height:1.7}
+.easy-group{margin-bottom:16px}
+.easy-group h4{font-size:12.5px;font-weight:700;margin-bottom:8px;color:var(--txt);display:flex;align-items:center;gap:6px}
+.easy-chips{display:flex;flex-wrap:wrap;gap:7px}
+.easy-chip{background:rgba(255,255,255,.04);border:1px solid var(--line);color:var(--mut);padding:8px 13px;border-radius:999px;font-size:11.5px;cursor:pointer;font-family:inherit;font-weight:600;transition:.2s}
+body.light .easy-chip{background:#f5f5fa;color:#5b5b7a}
+.easy-chip:hover{color:var(--txt);border-color:var(--acc2);transform:translateY(-1px)}
+.easy-chip.active{background:linear-gradient(135deg,rgba(52,211,153,.9),rgba(34,211,238,.85));color:#06060d;border-color:transparent;font-weight:700}
+.easy-out{background:rgba(0,0,0,.45);border:1px dashed rgba(52,211,153,.45);border-radius:14px;padding:16px;direction:ltr;text-align:left;font-size:13px;line-height:1.9;color:var(--txt);min-height:100px;white-space:pre-wrap;word-break:break-word;font-family:'Consolas','Menlo',monospace}
+body.light .easy-out{background:#f8f8fc;border-color:rgba(5,150,105,.35);color:var(--txt)}
+.easy-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+
 </style>
 </head>
 <body>
@@ -351,6 +419,7 @@ body.light .shapes{opacity:.2}
 
 <nav>
   <button class="tab active" data-tab="library">📚 کتابخانه (۹۰۰۰)</button>
+  <button class="tab" data-tab="easy">✨ ایده‌ساز آسان</button>
   <button class="tab" data-tab="builder">🎨 ایده‌ساز PRO</button>
   <button class="tab dna" data-tab="dnastudio">🧬 استودیو DNA</button>
   <button class="tab" data-tab="analyzer">📊 تحلیلگر</button>
@@ -382,6 +451,50 @@ body.light .shapes{opacity:.2}
     <div class="meta"><span id="count">در حال بارگذاری...</span><span id="favCount"></span></div>
     <div class="grid" id="grid"></div>
     <div class="loadwrap"><button class="btn" id="moreBtn" style="display:none">نمایش بیشتر ↓</button></div>
+  </section>
+
+  <!-- EASY IDEA MAKER -->
+  <section id="easy" class="panel" style="display:none">
+    <div class="easy-hero">
+      <h2>✨ ایده‌ساز آسان</h2>
+      <p>فقط چند کلیک — سوژه، محیط، سبک و حال‌وهوا را انتخاب کن و پرامپت آماده بگیر.</p>
+    </div>
+    <div class="easy-group">
+      <h4>👤 سوژه</h4>
+      <div class="easy-chips" id="easySubject"></div>
+    </div>
+    <div class="easy-group">
+      <h4>🌍 محیط</h4>
+      <div class="easy-chips" id="easyEnv"></div>
+    </div>
+    <div class="easy-group">
+      <h4>🎨 سبک</h4>
+      <div class="easy-chips" id="easyStyle"></div>
+    </div>
+    <div class="easy-group">
+      <h4>🌤 آب‌وهوا / زمان</h4>
+      <div class="easy-chips" id="easyWeather"></div>
+    </div>
+    <div class="easy-group">
+      <h4>🎭 حال‌وهوا</h4>
+      <div class="easy-chips" id="easyMood"></div>
+    </div>
+    <div class="easy-group">
+      <h4>💡 نور</h4>
+      <div class="easy-chips" id="easyLight"></div>
+    </div>
+    <div class="toolbar" style="margin-bottom:14px">
+      <button class="btn primary" id="easyBuildBtn">⚡ ساخت پرامپت</button>
+      <button class="btn green" id="easySurpriseBtn">🎁 سورپرایز</button>
+      <button class="btn" id="easyClearBtn">✕ پاک</button>
+      <button class="btn" id="easyToProBtn">🎨 انتقال به PRO</button>
+    </div>
+    <div class="easy-out" id="easyOut">گزینه‌ها را انتخاب کن و روی «ساخت پرامپت» بزن...</div>
+    <div class="easy-actions">
+      <button class="btn primary" id="easyCopyBtn">⧉ کپی</button>
+      <button class="btn" id="easyCopyChatgpt">🟢 ChatGPT</button>
+      <button class="btn" id="easyCopyMj">⛵ Midjourney</button>
+    </div>
   </section>
 
   <!-- BUILDER -->
@@ -813,8 +926,11 @@ body.light .shapes{opacity:.2}
     <div class="kb-row"><span>ایده تصادفی</span><span class="kb-key">Ctrl + R</span></div>
     <div class="kb-row"><span>ذخیره</span><span class="kb-key">Ctrl + S</span></div>
     <div class="kb-row"><span>تحلیل</span><span class="kb-key">Ctrl + Q</span></div>
-    <div class="kb-row"><span>استودیو DNA</span><span class="kb-key">Ctrl + 3</span></div>
-    <div class="kb-row"><span>تب‌ها</span><span class="kb-key">Ctrl + 1,2,3,4</span></div>
+    <div class="kb-row"><span>ایده‌ساز آسان</span><span class="kb-key">Ctrl + 2</span></div>
+    <div class="kb-row"><span>ایده‌ساز PRO</span><span class="kb-key">Ctrl + 3</span></div>
+    <div class="kb-row"><span>استودیو DNA</span><span class="kb-key">Ctrl + 4</span></div>
+    <div class="kb-row"><span>تحلیلگر</span><span class="kb-key">Ctrl + 5</span></div>
+    <div class="kb-row"><span>تب‌ها</span><span class="kb-key">Ctrl + 1–5</span></div>
     <div class="kb-row"><span>بستن</span><span class="kb-key">Esc</span></div>
     <button class="btn primary" id="closeKb" style="margin-top:16px;width:100%">بستن</button>
   </div>
@@ -2103,7 +2219,7 @@ function renderNext() {
     card.querySelector('.use').onclick = () => {
       document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
       document.querySelector('.tab[data-tab="builder"]').classList.add('active');
-      ['library','builder','dnastudio','analyzer'].forEach(id => {
+      ['library','easy','builder','dnastudio','analyzer'].forEach(id => {
         document.getElementById(id).style.display = id === 'builder' ? 'block' : 'none';
       });
       document.getElementById('idea').value = p.text;
@@ -2198,7 +2314,7 @@ document.querySelectorAll('.tab').forEach(t => {
   t.onclick = () => {
     document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
     t.classList.add('active');
-    ['library','builder','dnastudio','analyzer'].forEach(id => {
+    ['library','easy','builder','dnastudio','analyzer'].forEach(id => {
       document.getElementById(id).style.display = t.dataset.tab === id ? 'block' : 'none';
     });
     if (t.dataset.tab === 'analyzer') renderAnalytics();
@@ -2735,7 +2851,7 @@ document.getElementById('analyzeCurrentBtn').onclick = () => {
   document.getElementById('analyzeIdea').value = t;
   document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
   document.querySelector('.tab[data-tab="analyzer"]').classList.add('active');
-  ['library','builder','dnastudio','analyzer'].forEach(id => {
+  ['library','easy','builder','dnastudio','analyzer'].forEach(id => {
     document.getElementById(id).style.display = id === 'analyzer' ? 'block' : 'none';
   });
   renderAnalytics();
@@ -2962,7 +3078,7 @@ function injectDNA(dna) {
   // Switch to builder
   document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
   document.querySelector('.tab[data-tab="builder"]').classList.add('active');
-  ['library','builder','dnastudio','analyzer'].forEach(id => {
+  ['library','easy','builder','dnastudio','analyzer'].forEach(id => {
     document.getElementById(id).style.display = id === 'builder' ? 'block' : 'none';
   });
   build();
@@ -3205,7 +3321,7 @@ function renderEvolution() {
       document.getElementById('idea').value = r.text;
       document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
       document.querySelector('.tab[data-tab="builder"]').classList.add('active');
-      ['library','builder','dnastudio','analyzer'].forEach(id => {
+      ['library','easy','builder','dnastudio','analyzer'].forEach(id => {
         document.getElementById(id).style.display = id === 'builder' ? 'block' : 'none';
       });
       build();
@@ -3546,9 +3662,10 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 's' || e.key === 'S') { e.preventDefault(); if (document.getElementById('builder').style.display !== 'none') document.getElementById('saveBtn').click(); }
     if (e.key === 'q' || e.key === 'Q') { e.preventDefault(); document.getElementById('analyzeCurrentBtn').click(); }
     if (e.key === '1') document.querySelector('.tab[data-tab="library"]').click();
-    if (e.key === '2') document.querySelector('.tab[data-tab="builder"]').click();
-    if (e.key === '3') document.querySelector('.tab[data-tab="dnastudio"]').click();
-    if (e.key === '4') document.querySelector('.tab[data-tab="analyzer"]').click();
+    if (e.key === '2') document.querySelector('.tab[data-tab="easy"]').click();
+    if (e.key === '3') document.querySelector('.tab[data-tab="builder"]').click();
+    if (e.key === '4') document.querySelector('.tab[data-tab="dnastudio"]').click();
+    if (e.key === '5') document.querySelector('.tab[data-tab="analyzer"]').click();
   }
 });
 
@@ -3558,7 +3675,7 @@ document.addEventListener('keydown', (e) => {
 document.getElementById('floatIdea').onclick = () => {
   document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
   document.querySelector('.tab[data-tab="builder"]').classList.add('active');
-  ['library','builder','dnastudio','analyzer'].forEach(id => {
+  ['library','easy','builder','dnastudio','analyzer'].forEach(id => {
     document.getElementById(id).style.display = id === 'builder' ? 'block' : 'none';
   });
   document.getElementById('idea').value = EXAMPLES[Math.floor(Math.random() * EXAMPLES.length)];
@@ -3574,13 +3691,148 @@ if (location.hash.startsWith('#prompt=')) {
     const decoded = decodeURIComponent(location.hash.slice(8));
     document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
     document.querySelector('.tab[data-tab="builder"]').classList.add('active');
-    ['library','builder','dnastudio','analyzer'].forEach(id => {
+    ['library','easy','builder','dnastudio','analyzer'].forEach(id => {
       document.getElementById(id).style.display = id === 'builder' ? 'block' : 'none';
     });
     document.getElementById('idea').value = decoded;
     build();
   } catch (e) {}
 }
+
+/* ============================================================
+   EASY IDEA MAKER
+   ============================================================ */
+const EASY_DATA = {
+  subject: [
+    { fa: 'مرد', en: 'a man' }, { fa: 'زن', en: 'a woman' }, { fa: 'کودک', en: 'a child' },
+    { fa: 'سامورایی', en: 'a samurai' }, { fa: 'شوالیه', en: 'a knight' }, { fa: 'جادوگر', en: 'a wizard' },
+    { fa: 'فضانورد', en: 'an astronaut' }, { fa: 'ربات', en: 'a robot' }, { fa: 'اژدها', en: 'a dragon' },
+    { fa: 'گربه', en: 'a cat' }, { fa: 'سگ', en: 'a dog' }, { fa: 'گرگ', en: 'a wolf' },
+    { fa: 'فرشته', en: 'an angel' }, { fa: 'دیو', en: 'a demon' }, { fa: 'پیرمرد', en: 'an elderly man' },
+    { fa: 'شاهزاده', en: 'a prince' }, { fa: 'ملکه', en: 'a queen' }, { fa: 'هکر', en: 'a hacker' }
+  ],
+  env: [
+    { fa: 'جنگل', en: 'a misty forest' }, { fa: 'شهر نئونی', en: 'a neon-lit city' }, { fa: 'کوهستان', en: 'a mountain landscape' },
+    { fa: 'ساحل', en: 'a beach at sunset' }, { fa: 'معبد', en: 'an ancient temple' }, { fa: 'کتابخانه', en: 'a magical library' },
+    { fa: 'فضا', en: 'outer space' }, { fa: 'کویر', en: 'a vast desert' }, { fa: 'قلعه', en: 'a medieval castle' },
+    { fa: 'کوچه بارانی', en: 'a rainy alley' }, { fa: 'غار بلورین', en: 'a crystal cave' }, { fa: 'باغ ایرانی', en: 'a Persian garden' }
+  ],
+  style: [
+    { fa: 'سینمایی', en: 'cinematic photography' }, { fa: 'رئالیستیک', en: 'photorealistic' }, { fa: 'انیمه', en: 'anime style' },
+    { fa: 'نقاشی روغنی', en: 'oil painting' }, { fa: 'آبرنگ', en: 'watercolor illustration' }, { fa: 'سایبرپانک', en: 'cyberpunk concept art' },
+    { fa: 'فانتزی', en: 'dark fantasy illustration' }, { fa: 'مینیمال', en: 'minimalist design' }, { fa: 'استودیو گیبلی', en: 'Studio Ghibli style' }
+  ],
+  weather: [
+    { fa: 'باران شدید', en: 'heavy rain' }, { fa: 'غروب طلایی', en: 'golden hour' }, { fa: 'مه صبحگاهی', en: 'morning mist' },
+    { fa: 'برف', en: 'gentle snow' }, { fa: 'طوفان', en: 'thunderstorm' }, { fa: 'شب پرستاره', en: 'starry night' },
+    { fa: 'آسمان صاف', en: 'clear sky' }, { fa: 'شفق قطبی', en: 'aurora borealis' }
+  ],
+  mood: [
+    { fa: 'حماسی', en: 'epic and heroic' }, { fa: 'آرام', en: 'serene and peaceful' }, { fa: 'مرموز', en: 'mysterious' },
+    { fa: 'غمگین', en: 'melancholic' }, { fa: 'امیدوار', en: 'hopeful and uplifting' }, { fa: 'ترسناک', en: 'ominous and dark' },
+    { fa: 'رمانتیک', en: 'romantic' }, { fa: 'دنج', en: 'cozy and warm' }
+  ],
+  light: [
+    { fa: 'نور طلایی', en: 'golden hour lighting' }, { fa: 'نور دراماتیک', en: 'dramatic rim lighting' }, { fa: 'نئون', en: 'neon glow' },
+    { fa: 'نور نرم', en: 'soft diffused light' }, { fa: 'سایه قوی', en: 'chiaroscuro lighting' }, { fa: 'نور ماه', en: 'moonlight' }
+  ]
+};
+
+const easyState = { subject: null, env: null, style: null, weather: null, mood: null, light: null };
+
+function initEasyChips() {
+  Object.keys(EASY_DATA).forEach(group => {
+    const el = document.getElementById('easy' + group.charAt(0).toUpperCase() + group.slice(1));
+    if (!el) return;
+    el.innerHTML = '';
+    EASY_DATA[group].forEach(item => {
+      const b = document.createElement('button');
+      b.className = 'easy-chip';
+      b.type = 'button';
+      b.textContent = item.fa;
+      b.onclick = () => {
+        el.querySelectorAll('.easy-chip').forEach(c => c.classList.remove('active'));
+        if (easyState[group] === item.en) {
+          easyState[group] = null;
+        } else {
+          easyState[group] = item.en;
+          b.classList.add('active');
+        }
+      };
+      el.appendChild(b);
+    });
+  });
+}
+
+function buildEasy() {
+  const parts = [];
+  if (easyState.subject) parts.push(easyState.subject);
+  if (easyState.env) parts.push('in ' + easyState.env);
+  if (easyState.weather) parts.push(easyState.weather);
+  if (easyState.mood) parts.push(easyState.mood + ' mood');
+  if (easyState.light) parts.push(easyState.light);
+  if (easyState.style) parts.push(easyState.style);
+  parts.push('highly detailed', 'cinematic composition', 'rich atmosphere', '8k');
+  const prompt = parts.filter(Boolean).join(', ');
+  const out = document.getElementById('easyOut');
+  if (!easyState.subject && !easyState.env) {
+    out.textContent = 'حداقل سوژه یا محیط را انتخاب کن...';
+    return;
+  }
+  out.textContent = prompt;
+  toast('⚡ پرامپت ساخته شد!');
+}
+
+document.getElementById('easyBuildBtn').onclick = buildEasy;
+document.getElementById('easySurpriseBtn').onclick = () => {
+  Object.keys(EASY_DATA).forEach(group => {
+    const items = EASY_DATA[group];
+    const pick = items[Math.floor(Math.random() * items.length)];
+    easyState[group] = pick.en;
+    const el = document.getElementById('easy' + group.charAt(0).toUpperCase() + group.slice(1));
+    if (!el) return;
+    el.querySelectorAll('.easy-chip').forEach(c => {
+      c.classList.toggle('active', c.textContent === pick.fa);
+    });
+  });
+  buildEasy();
+  toast('🎁 سورپرایز!');
+};
+document.getElementById('easyClearBtn').onclick = () => {
+  Object.keys(easyState).forEach(k => easyState[k] = null);
+  document.querySelectorAll('.easy-chip').forEach(c => c.classList.remove('active'));
+  document.getElementById('easyOut').textContent = 'گزینه‌ها را انتخاب کن و روی «ساخت پرامپت» بزن...';
+  toast('✕ پاک شد');
+};
+document.getElementById('easyCopyBtn').onclick = () => {
+  const t = document.getElementById('easyOut').textContent.trim();
+  if (!t || t.indexOf('گزینه‌ها') > -1 || t.indexOf('حداقل') > -1) { toast('اول بساز!'); return; }
+  copyText(t, '✓');
+};
+document.getElementById('easyCopyChatgpt').onclick = () => {
+  const t = document.getElementById('easyOut').textContent.trim();
+  if (!t || t.indexOf('گزینه‌ها') > -1 || t.indexOf('حداقل') > -1) { toast('اول بساز!'); return; }
+  copyText('Please create a highly detailed image with this concept: ' + t + '. Focus on strong visual storytelling, cinematic composition, atmospheric lighting, and rich detail in every element.', '🟢 کپی شد');
+};
+document.getElementById('easyCopyMj').onclick = () => {
+  const t = document.getElementById('easyOut').textContent.trim();
+  if (!t || t.indexOf('گزینه‌ها') > -1 || t.indexOf('حداقل') > -1) { toast('اول بساز!'); return; }
+  copyText(t + ' --ar 16:9 --v 6 --style raw --stylize 250 --quality 2', '⛵ کپی شد');
+};
+document.getElementById('easyToProBtn').onclick = () => {
+  const t = document.getElementById('easyOut').textContent.trim();
+  if (!t || t.indexOf('گزینه‌ها') > -1 || t.indexOf('حداقل') > -1) { toast('اول بساز!'); return; }
+  document.getElementById('idea').value = t;
+  document.querySelectorAll('.tab').forEach(x => x.classList.remove('active'));
+  document.querySelector('.tab[data-tab="builder"]').classList.add('active');
+  ['library','easy','builder','dnastudio','analyzer'].forEach(id => {
+    document.getElementById(id).style.display = id === 'builder' ? 'block' : 'none';
+  });
+  build();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  toast('🎨 به PRO منتقل شد');
+};
+initEasyChips();
 
 /* ============================================================
    INIT
@@ -3591,10 +3843,10 @@ renderDNALibrary();
 updateDNADropdowns();
 updateBlenderSlots();
 
-console.log('%cپرامپت ساز کاسپین v1.0.4 🧬', 'font-size:22px;font-weight:900;background:linear-gradient(90deg,#ec4899,#8b5cf6,#a855f7,#22d3ee);-webkit-background-clip:text;color:transparent');
+console.log('%cپرامپت ساز کاسپین v1.0.5 🧬', 'font-size:22px;font-weight:900;background:linear-gradient(90deg,#ec4899,#8b5cf6,#a855f7,#22d3ee);-webkit-background-clip:text;color:transparent');
 console.log('تعداد کل پرامپت‌ها:', ALL.length);
 console.log('تعداد دسته‌بندی‌ها:', Object.keys(RAW).length);
-console.log('🧬 DNA Studio فعال — نسخه پریمیوم v1.0.4');
+console.log('🧬 DNA Studio + ✨ Easy Idea Maker — v1.0.5');
 </script>
 </body>
 </html>
